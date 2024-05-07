@@ -1,14 +1,14 @@
 const links = [
-  { id: 1, text: "inicio", href: "inicio" },
-  { id: 2, text: "contacto", href: "contacto" },
+  { id: 1, text: 'inicio', href: 'inicio' },
+  { id: 2, text: 'contacto', href: 'contacto' },
 ];
 
 const MenuMobile = ({ isOpen, onClick }) => {
   return (
     <div
       className={`${
-        isOpen ? "flex" : "hidden"
-      } bg-black/10 w-full h-screen fixed inset-0 md:hidden`}
+        isOpen ? 'flex' : 'hidden'
+      } bg-black/10 w-full h-screen fixed inset-0 lg:hidden`}
       onClick={onClick}
     >
       <ul
@@ -18,7 +18,7 @@ const MenuMobile = ({ isOpen, onClick }) => {
         `}
       >
         {links.map((link) => (
-          <li key={link.id} className="p-2">
+          <li key={link.id} className='p-2'>
             <a href={link.href}>{link.text}</a>
           </li>
         ))}

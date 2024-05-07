@@ -1,7 +1,7 @@
-import useNav from "../../hooks/useNav";
-import MenuMobile from "./MenuMobile";
+import useNav from '../../hooks/useNav';
+import MenuMobile from './MenuMobile';
 
-import { BsJustify, BsXLg } from "react-icons/bs";
+import { BsJustify, BsXLg } from 'react-icons/bs';
 
 const Navbar = () => {
   const { isOpen, handleIsOpen, hasScrolled } = useNav();
@@ -16,7 +16,7 @@ const Navbar = () => {
     >
       <div>LOGO</div>
       <button
-        className="text-2xl cursor-pointer z-[99] text-secondary flex items-center justify-center md:hidden"
+        className='text-2xl cursor-pointer z-[99] text-secondary flex items-center justify-center lg:hidden'
         onClick={handleIsOpen}
       >
         {isOpen ? <BsXLg /> : <BsJustify />}
