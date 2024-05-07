@@ -1,6 +1,12 @@
-const Layout = ({ children }) => {
+const Layout = ({ maxWidth, children }) => {
   return (
-    <div className="py-[100px] px-2 max-w-[1440px] mx-auto">{children}</div>
+    <div
+      className={`
+    py-[100px] px-2 ${maxWidth}  mx-auto bg-red-400
+    `}
+    >
+      {children}
+    </div>
   );
 };
 export default Layout;
